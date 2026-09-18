@@ -3,6 +3,8 @@
 #include <cstdint>
 #include <string>
 
+namespace sentinel {
+
 struct Transaction {
     std::string transaction_id;
     std::string user_id;
@@ -10,3 +12,5 @@ struct Transaction {
     std::int64_t timestamp{};
     std::string merchant_id;
 };
+
+} // namespace sentinel
